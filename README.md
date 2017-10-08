@@ -21,7 +21,7 @@ o	Users should be able to print a unique set of all contacts across multiple add
 * [Thucydides](http://www.thucydides.info/) - Used for BDD
 
 ## Acceptance tests
-* run acceptance tests with command **mvn verify**
+* To build the project or run acceptance tests,execute command **mvn clean install** or **mvn verify**
 * **view thucydides report** at ~/address-book/target/site/thucydides/index.html
 ![thucydides_report](https://user-images.githubusercontent.com/12387336/31316150-75c7d214-ac73-11e7-89bc-2bc2bcc49bcb.PNG)
 * **view jbehave report** at ~/address-book/target/jbehave/stories.address_book_app.html
