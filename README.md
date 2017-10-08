@@ -15,6 +15,7 @@ o	Users should be able to maintain multiple address books
 o	Users should be able to print a unique set of all contacts across multiple address books
 ```
 ## Built With
+* Java 8
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [JBehave](http://jbehave.org/) - Used for BDD
 * [Thucydides](http://www.thucydides.info/) - Used for BDD
@@ -28,4 +29,4 @@ o	Users should be able to print a unique set of all contacts across multiple add
 
 
 ## Note
-negative scenario's are handled
+Negative scenario's are covered
