@@ -1,10 +1,8 @@
 package com.app;
 
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
+import java.util.stream.Collectors;
 
 public class User {
 	
@@ -42,13 +40,10 @@ public class User {
 	}
 
 	public void printAllUniqueContacts() {
-		Collection<AddressBook> values = addressBooks.values();
-		Set<Contact> allContacts = new HashSet<>();
-		
-		for(AddressBook addressBook : values){
-			allContacts.addAll(addressBook.getContacts());
-		}
-		allContacts.forEach(System.out::println);
+		addressBooks.values().stream()
+		.map(addressBook -> addressBook.getContacts())
+		.flatMap(contacts -> contacts.stream())
+		.collect(Collectors.toSet()).forEach(System.out::println);
 	}
-
+	
 }
